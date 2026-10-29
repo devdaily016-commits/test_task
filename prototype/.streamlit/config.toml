@@ -1,0 +1,16 @@
+[theme]
+base = "light"
+primaryColor = "#1E4D6B"
+backgroundColor = "#F4F7F8"
+secondaryBackgroundColor = "#E7EEF2"
+textColor = "#1A2830"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+folderWatchBlacklist = [".venv", "__pycache__", ".pytest_cache"]

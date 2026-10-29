@@ -1,0 +1,123 @@
+{
+  "member_name": "Jordan Hale",
+  "member_dob": "1978-04-12",
+  "member_id": "SYN-100284",
+  "provider_name": "Avery Chen, MD",
+  "provider_npi": "1245300011",
+  "provider_fax": "555-010-0142",
+  "cpt": "62323",
+  "icd10": [
+    "M54.16"
+  ],
+  "laterality": "Left",
+  "spinal_level": "L4-L5",
+  "is_repeat": false,
+  "pain_duration_weeks": 2.0,
+  "conservative_care_weeks": null,
+  "conservative_care_description": null,
+  "unable_to_tolerate_conservative_care": false,
+  "history_and_exam_present": true,
+  "baseline_pain_score": null,
+  "baseline_function_score": null,
+  "imaging_report_present": false,
+  "imaging_modality": null,
+  "imaging_findings": null,
+  "prior_relief_percent": null,
+  "prior_relief_months": null,
+  "herpes_zoster": false,
+  "field_confidence": {
+    "member_name": 0.96,
+    "member_dob": 0.96,
+    "member_id": 0.96,
+    "provider_name": 0.96,
+    "provider_npi": 0.96,
+    "provider_fax": 0.96,
+    "cpt": 0.96,
+    "laterality": 0.96,
+    "spinal_level": 0.96,
+    "is_repeat": 0.96,
+    "pain_duration_weeks": 0.96,
+    "conservative_care_weeks": 0.96,
+    "history_and_exam_present": 0.96,
+    "baseline_pain_score": 0.96,
+    "baseline_function_score": 0.96,
+    "imaging_report_present": 0.96,
+    "imaging_modality": 0.96,
+    "prior_relief_percent": 0.96,
+    "prior_relief_months": 0.96
+  },
+  "evidence": {
+    "member_name": [
+      {
+        "page": 1,
+        "quote": "Member name: Jordan Hale"
+      }
+    ],
+    "member_dob": [
+      {
+        "page": 1,
+        "quote": "Date of birth: 1978-04-12"
+      }
+    ],
+    "member_id": [
+      {
+        "page": 1,
+        "quote": "Member ID: SYN-100284"
+      }
+    ],
+    "provider_name": [
+      {
+        "page": 1,
+        "quote": "Requesting provider: Avery Chen, MD"
+      }
+    ],
+    "provider_npi": [
+      {
+        "page": 1,
+        "quote": "NPI: 1245300011"
+      }
+    ],
+    "provider_fax": [
+      {
+        "page": 1,
+        "quote": "Fax: 555-010-0142"
+      }
+    ],
+    "cpt": [
+      {
+        "page": 1,
+        "quote": "CPT: 62323"
+      }
+    ],
+    "laterality": [
+      {
+        "page": 1,
+        "quote": "Laterality: Left"
+      }
+    ],
+    "spinal_level": [
+      {
+        "page": 1,
+        "quote": "Spinal level: L4-L5"
+      }
+    ],
+    "pain_duration_weeks": [
+      {
+        "page": 2,
+        "quote": "History: left leg pain began 2 weeks ago after lifting."
+      }
+    ],
+    "history_and_exam_present": [
+      {
+        "page": 2,
+        "quote": "History, physical, and neurological exam are in this note."
+      }
+    ],
+    "imaging_report_present": [
+      {
+        "page": 2,
+        "quote": "MRI was ordered. The report is not in this packet."
+      }
+    ]
+  }
+}

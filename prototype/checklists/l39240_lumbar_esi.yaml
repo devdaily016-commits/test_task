@@ -1,0 +1,91 @@
+policy_id: L39240
+title: Epidural Steroid Injections for Pain Management
+service_line: Lumbar epidural steroid injection
+revision_effective: "2026-04-16"
+billing_article: A58993
+source_url: https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=39240
+review_confidence_below: 0.7
+note: >
+  Completeness only. A gap means a document or fact is missing from the packet.
+  Coverage is a separate decision, made later by a clinician. Source text is CMS
+  LCD L39240, revision effective April 16, 2026. Billing article A58993.
+
+items:
+  - id: member_identity
+    label: Member name, date of birth, and member ID
+    letter: Send the member's full name, date of birth, and member ID as they appear on the ID card.
+    all:
+      - {field: member_name, op: present}
+      - {field: member_dob, op: present}
+      - {field: member_id, op: present}
+
+  - id: requesting_provider
+    label: Requesting provider name, NPI, and fax
+    letter: Include the requesting provider's name, NPI, and fax number.
+    all:
+      - {field: provider_name, op: present}
+      - {field: provider_npi, op: present}
+      - {field: provider_fax, op: present}
+
+  - id: requested_service
+    label: CPT, spinal level, and laterality
+    letter: State the CPT code, the spinal level, and the side to be treated.
+    all:
+      - {field: cpt, op: present}
+      - {field: spinal_level, op: present}
+      - {field: laterality, op: present}
+
+  - id: diagnosis
+    label: ICD-10 diagnosis
+    letter: Include an ICD-10 code for the radicular pain, stenosis, or post-laminectomy syndrome.
+    all:
+      - {field: icd10, op: nonempty}
+
+  - id: history_exam
+    label: History and physical with a neurological exam
+    source: "L39240 Covered Indications, requirement 1"
+    letter: Send the history and physical, including the neurological exam.
+    all:
+      - {field: history_and_exam_present, op: "true"}
+
+  - id: pain_duration
+    label: Pain duration of at least 4 weeks
+    source: "L39240 Covered Indications, requirement 1"
+    letter: Document pain duration of at least 4 weeks, or that this request is for acute herpes zoster.
+    any:
+      - {field: pain_duration_weeks, op: gte, value: 4}
+      - {field: herpes_zoster, op: "true"}
+
+  - id: conservative_care
+    label: Four weeks of failed conservative care, or inability to tolerate it
+    source: "L39240 Covered Indications, requirement 1"
+    letter: Document at least 4 weeks of failed noninvasive care, such as medication plus physical therapy, or why the member could not tolerate it.
+    any:
+      - {field: conservative_care_weeks, op: gte, value: 4}
+      - {field: unable_to_tolerate_conservative_care, op: "true"}
+
+  - id: imaging
+    label: Concordant MRI or CT report in the packet
+    source: "L39240 Covered Indications, requirement 1"
+    letter: Attach the MRI or CT report that matches the exam. A note that imaging was ordered does not take the place of the report.
+    all:
+      - {field: imaging_report_present, op: "true"}
+      - {field: imaging_modality, op: in, value: ["MRI", "CT"]}
+
+  - id: baseline_score
+    label: Baseline pain or function score
+    source: "L39240 Covered Indications, requirement 1"
+    letter: Record a baseline pain or function score, such as NRS, VAS, or ODI, taken before the procedure.
+    any:
+      - {field: baseline_pain_score, op: present}
+      - {field: baseline_function_score, op: present}
+
+  - id: repeat_relief
+    label: Repeat injection documents 50% relief for 3 months
+    source: "L39240 Covered Indications, requirement 6"
+    letter: For a repeat injection, document at least 50% relief lasting at least 3 months on the same scale used at baseline.
+    when: {field: is_repeat, op: "true"}
+    when_skipped: Does not apply. This request is an initial injection.
+    all:
+      - {field: prior_relief_percent, op: gte, value: 50}
+      - {field: prior_relief_months, op: gte, value: 3}

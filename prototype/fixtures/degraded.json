@@ -1,0 +1,105 @@
+{
+  "member_name": "Morgan Ellis",
+  "member_dob": "1958-06-21",
+  "member_id": null,
+  "provider_name": "Lena Brooks, MD",
+  "provider_npi": "1098765435",
+  "provider_fax": "555-016-4410",
+  "cpt": "62323",
+  "icd10": [
+    "M51.16"
+  ],
+  "laterality": "Left",
+  "spinal_level": "L4-L5",
+  "is_repeat": false,
+  "pain_duration_weeks": 8.0,
+  "conservative_care_weeks": 6.0,
+  "conservative_care_description": "Naproxen plus physical therapy for 6 weeks, without meaningful relief.",
+  "unable_to_tolerate_conservative_care": false,
+  "history_and_exam_present": true,
+  "baseline_pain_score": "NRS 7/10",
+  "baseline_function_score": "ODI 38",
+  "imaging_report_present": false,
+  "imaging_modality": null,
+  "imaging_findings": null,
+  "prior_relief_percent": null,
+  "prior_relief_months": null,
+  "herpes_zoster": false,
+  "field_confidence": {
+    "member_name": 0.96,
+    "member_dob": 0.96,
+    "member_id": 0.33,
+    "provider_name": 0.96,
+    "provider_npi": 0.96,
+    "provider_fax": 0.58,
+    "cpt": 0.96,
+    "laterality": 0.96,
+    "spinal_level": 0.96,
+    "is_repeat": 0.96,
+    "pain_duration_weeks": 0.96,
+    "conservative_care_weeks": 0.96,
+    "history_and_exam_present": 0.96,
+    "baseline_pain_score": 0.96,
+    "baseline_function_score": 0.96,
+    "imaging_report_present": 0.4,
+    "imaging_modality": 0.96,
+    "prior_relief_percent": 0.96,
+    "prior_relief_months": 0.96
+  },
+  "evidence": {
+    "member_name": [
+      {
+        "page": 1,
+        "quote": "Member name: Morgan Ellis"
+      }
+    ],
+    "member_dob": [
+      {
+        "page": 1,
+        "quote": "Date of birth: 1958-06-21"
+      }
+    ],
+    "provider_name": [
+      {
+        "page": 1,
+        "quote": "Requesting provider: Lena Brooks, MD"
+      }
+    ],
+    "provider_fax": [
+      {
+        "page": 1,
+        "quote": "Fax: 555-016-4410"
+      }
+    ],
+    "cpt": [
+      {
+        "page": 1,
+        "quote": "CPT: 62323"
+      }
+    ],
+    "pain_duration_weeks": [
+      {
+        "page": 2,
+        "quote": "History: left leg pain for 8 weeks, into the foot."
+      }
+    ],
+    "conservative_care_weeks": [
+      {
+        "page": 2,
+        "quote": "Care: naproxen plus physical therapy for 6 weeks."
+      }
+    ],
+    "baseline_pain_score": [
+      {
+        "page": 2,
+        "quote": "Baseline pain score: NRS 7/10."
+      }
+    ],
+    "history_and_exam_present": [
+      {
+        "page": 2,
+        "quote": "History, physical, and neurological exam are in this note."
+      }
+    ]
+  }
+}

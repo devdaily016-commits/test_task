@@ -1,0 +1,117 @@
+{
+  "member_name": "Riley Okonkwo",
+  "member_dob": "1969-11-03",
+  "member_id": "SYN-100291",
+  "provider_name": "Samir Patel, MD",
+  "provider_npi": "1345678902",
+  "provider_fax": "555-014-2208",
+  "cpt": "64483",
+  "icd10": [
+    "M51.16"
+  ],
+  "laterality": "Left",
+  "spinal_level": "L5",
+  "is_repeat": false,
+  "pain_duration_weeks": 8.0,
+  "conservative_care_weeks": 6.0,
+  "conservative_care_description": "Naproxen plus physical therapy for 6 weeks, without meaningful relief.",
+  "unable_to_tolerate_conservative_care": false,
+  "history_and_exam_present": true,
+  "baseline_pain_score": "NRS 8/10",
+  "baseline_function_score": "ODI 46",
+  "imaging_report_present": true,
+  "imaging_modality": "MRI",
+  "imaging_findings": "Left paracentral L4-L5 herniation contacting the traversing L5 nerve root.",
+  "prior_relief_percent": null,
+  "prior_relief_months": null,
+  "herpes_zoster": false,
+  "field_confidence": {
+    "member_name": 0.96,
+    "member_dob": 0.96,
+    "member_id": 0.96,
+    "provider_name": 0.96,
+    "provider_npi": 0.96,
+    "provider_fax": 0.96,
+    "cpt": 0.96,
+    "laterality": 0.96,
+    "spinal_level": 0.96,
+    "is_repeat": 0.96,
+    "pain_duration_weeks": 0.96,
+    "conservative_care_weeks": 0.96,
+    "history_and_exam_present": 0.96,
+    "baseline_pain_score": 0.96,
+    "baseline_function_score": 0.96,
+    "imaging_report_present": 0.96,
+    "imaging_modality": 0.96,
+    "prior_relief_percent": 0.96,
+    "prior_relief_months": 0.96
+  },
+  "evidence": {
+    "member_name": [
+      {
+        "page": 1,
+        "quote": "Member name: Riley Okonkwo"
+      }
+    ],
+    "member_id": [
+      {
+        "page": 1,
+        "quote": "Member ID: SYN-100291"
+      }
+    ],
+    "provider_name": [
+      {
+        "page": 1,
+        "quote": "Requesting provider: Samir Patel, MD"
+      }
+    ],
+    "cpt": [
+      {
+        "page": 1,
+        "quote": "CPT: 64483"
+      }
+    ],
+    "pain_duration_weeks": [
+      {
+        "page": 2,
+        "quote": "History: left leg pain for 8 weeks, into the foot."
+      }
+    ],
+    "conservative_care_weeks": [
+      {
+        "page": 2,
+        "quote": "Care: naproxen plus physical therapy for 6 weeks."
+      }
+    ],
+    "baseline_pain_score": [
+      {
+        "page": 2,
+        "quote": "Baseline pain score: NRS 8/10."
+      }
+    ],
+    "baseline_function_score": [
+      {
+        "page": 2,
+        "quote": "Baseline function score: ODI 46."
+      }
+    ],
+    "history_and_exam_present": [
+      {
+        "page": 2,
+        "quote": "History, physical, and neurological exam are in this note."
+      }
+    ],
+    "imaging_modality": [
+      {
+        "page": 3,
+        "quote": "Modality: MRI lumbar spine without contrast"
+      }
+    ],
+    "imaging_findings": [
+      {
+        "page": 3,
+        "quote": "Findings: left paracentral L4-L5 herniation."
+      }
+    ]
+  }
+}

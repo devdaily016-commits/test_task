@@ -1,0 +1,31 @@
+{{ today }}
+
+{{ provider_name or "Requesting provider" }}
+Fax {{ provider_fax or "not readable on the request" }}
+
+Re: {{ member_name or "Member name not readable" }}
+Member ID: {{ member_id or "not readable on the fax" }}
+Reference: {{ reference }}
+Service: lumbar epidural steroid injection
+Checklist: CMS LCD L39240
+CPT: {{ cpt or "not listed" }}
+
+We received a prior authorization request by fax.
+Clinical review has not started. Please send the items below.
+
+{% for item in gaps %}
+{{ loop.index }}. {{ item.letter }}
+{% endfor %}
+{% if reviews %}
+
+The fax was hard to read. Please confirm:
+{% for item in reviews %}
+- {{ item.label }}
+{% endfor %}
+{% endif %}
+
+Fax records to 555-010-0100 and quote {{ reference }}.
+
+This letter asks for documents. Coverage has not been decided.
+Utilization management intake
+Synthetic demonstration. Not a real patient.
